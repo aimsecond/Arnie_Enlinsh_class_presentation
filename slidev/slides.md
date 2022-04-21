@@ -1,383 +1,215 @@
 ---
-# try also 'default' to start simple
-theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
-class: 'text-center'
-# https://sli.dev/custom/highlighters.html
-highlighter: shiki
-# show line numbers in code blocks
+theme: geist
+layout: cover
 lineNumbers: false
-# some information about the slides, markdown enabled
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# persist drawings in exports and build
-drawings:
-  persist: false
 ---
 
-# Welcome to Slidev
+# A Brief History of Machine Learning
 
-Presentation slides for developers
+Haowen Zhang
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
+<!--- page break -->
 
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-    class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
+---
+layout: two-cols
+---
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+# what is machine learning?
+
+#### 1949 Donald Hebb
+- interaction pattern between neurons
+#### 1950 Alan Turing & Turing Test
+#### 1952 concept introduced by **Arthur Samuel**
+- Ability to learn without being explicitly programmed
+
+<img src="https://cs.stanford.edu/sites/default/files/Arthur%20Samuel%20picture.jpg" alt="drawing" width="80"/>
+::right::
+<br>
+<img src="https://miro.medium.com/max/789/0*Q3PICBlib-932hhH.png" alt="drawing" width="500"/>
+
+
+<!--- 
+1949 – Donald Hebb published “The Organization of Behavior,” introducing theories on the interaction between neurons, which were later crucial in developing machine learning. He was considered the 'father of neuropsychology.' 
+
+1950 – Alan Turing invented the Turing Test, or the imitation game, to determine if a computer can pass for a human-based on its written linguistic fluency.
+
+1951 – Dean Edmonds and Marvin Minsky built the SNARC machine, the first machine with an artificial neural network, based on Hebb’s model.
+
+1952 – Arthur Samuel developed a computer game of checkers; USC 
 -->
 
 ---
-
-# What is Slidev?
-
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
+layout: two-cols
 ---
 
-# Navigation
+## 1957-1974 The golden era
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
+#### 1957 the perceptron
+- designed by Frank Rosenblatt, The building block of Neural Network
+<img src="https://953894.smushcdn.com/2611031/wp-content/uploads/2019/05/Perceptron1957.gif?lossy=0&strip=1&webp=1" alt="drawing" width="400"/>
 
-### Keyboard Shortcuts
+::right::
+<br><br><br><br><br><br><br><br><br><br>
+<img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Perceptron/diagram-of-a-biological-neuron_1.jpg" alt="drawing" width="450"/>
 
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+<!--- page break -->
+---
+layout: image
+image: https://inews.gtimg.com/newsapp_bt/0/14533715758/1000
+---
 
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+<!--- page break -->
+---
+layout: iframe
+url: https://gfycat.com/ifr/AnimatedVacantAldabratortoise
+---
+
+---
+layout: default
+---
+# However, people under estimated it..
+
+### 1957-1974  Golden era of machine learning
+- Researchers came up with some great methods. (e.g KNN)
+- Lots of funds, people were optimistic
+- entry-level AI agent like chatting bot
+- "machines can beat best human chess player with 10 years"
+
+### 1974-1980  Dark winter
+- promise not fulfilled
+- This field was defunded
+
+
+<!-- 
+1967——「最近邻」算法（The nearest neighbor algorithm）出现
+由此计算机可以进行简单的模式识别。它可以帮助旅行商制定旅游路线图，
+即保证旅行商从任意城市出发，以最短的总路程遍历所有城市
+The nearest neighbor algorithm was written for the first time this year. It allows computers to start using basic pattern recognition. This algorithm can be used to map a route for a traveling salesman that starts in a random city and ensures that the salesman passes by all the required cities in the shortest time. Today, the nearest neighbor algorithm called KNN is mostly used to classify a data point on the basis of how their neighbors are classified. KNN is used in retail applications that recognize patterns in credit card usage or for theft prevention when implemented in CCTV image recognition in retail stores
+-->
+
+---
+layout: default
+---
+# Machine learning in 1980-1993
+
+### 1980-1989  situation became better
+- Expert system made some progress (e.g. medical diagnostic, tax services)
+- Expert system = knowledge base + inference engine
+- can it out-perform human? Yes and no
+
+### 1989-1993  Second winter
+- Expert system didn't achieve commercial success due to high cost
+- Expert system requires heavy computing
+- Computer was expensive at that time
+- Hire a human expert cost way less money!
+
+<!-- In artificial intelligence, an expert system is a computer system emulating the decision-making ability of a human expert. Expert systems are designed to solve complex problems by reasoning through bodies of knowledge, represented mainly as if–then rules rather than through conventional procedural code -->
+---
+layout: default
+---
+# No Deep learning? Not yet.
+
+### 1993-2006  statistical machine learning
+- learning from data instead of human knowledge
+
+#### Symbolism: (like k-NN, decision tree, etc)
+1. represents info through symbols and their relationships.
+2. Specific algorithms are used to process these symbols to solve problem / deduce new knowledge
+#### connectionism (like perceptron, Neural Network)
+1. represents info in a distributed, less explicit form with a network
+2. Biological processes underlying learning / problem solving
+
+<!--- page break -->
+---
+layout: center
+---
+
+# Comparison
+<img src="https://web.media.mit.edu/~minsky/papers/SymbolicVs.Connectionist_files/image012.png" width="800"/>
+
+<!--- page break -->
 
 ---
 layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
+image: https://mozanunal.com/images/yoloroad.gif
 ---
+## 2006-now Deep learning!
 
-# Code
+#### 2009 ImageNet: the largest labeled image database
+- it focus on high quality training data rather than algorithm
+#### 2012 AlexNet: the absolute winner in ImageNet Competition
+- 10.8% less error rate than the runner up, which is a huge improvement
+- this became a hot topic in computer vision community
+#### 2014 DeepFace: 97.35% accuracy in face recognition by Facebook
 
-Use code snippets and get the highlighting directly![^1]
-
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
-<arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
-
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
+<!--- page break -->
 
 ---
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-
----
-class: px-20
+layout: default
 ---
 
-# Themes
+# Since then, it become more and more data intensive
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-preload: false
----
-
-# Animations
-
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
+### 2020 GPT-3 A deep learning model to produce human-like text.
+- It has 175 billion machine learning parameters
+- It utilized all collectable human text on the internet to train itself
+- Thanks to the rapid-growing computing power!
 
 <br>
 
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-3 gap-10 pt-4 -mb-6">
-
-```mermaid {scale: 0.5}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
+Let's play with it!
+- **[GPT-3 Playground](https://beta.openai.com/playground)**
 
 
 ---
 layout: center
+---
+# Well, GAN is even more interesting than GPT-3.
+
+
+---
+layout: iframe
+url: https://creator.nightcafe.studio/
+---
+
+<!--- page break -->
+
+---
+layout: default
+---
+# Different deep-learning models
+<img src="https://www.mathworks.com/discovery/reinforcement-learning/_jcr_content/mainParsys3/discoverysubsection/mainParsys/image.adapt.full.medium.png/1647932638418.png" width="700">
+
+<!--
+Supervised machine learning algorithms are able to apply what they have learned in the past to new data with the help of labeled examples. They do that to predict future events. Such algorithms begin with the analysis of the known training data set and then produce insights to make predictions about the output values. The system can provide targets for any new input after being exposed to sufficient training. The algorithm can also compare its results with the correct and intended output to find errors and modify the model accordingly.
+
+
+Unsupervised machine learning algorithms are used when data fed to the algorithm is not labeled or classified in any way. Unsupervised learning is based on systems that analyze patterns in unlabeled data. The system doesn’t arrive at the output that can be just right or wrong, but rather it explores the data and draws inferences from data sets.
+
+Reinforcement machine learning algorithms represent another type of learning method. This type of algorithm interacts with the environment by producing actions and then discovering errors or rewards. Delayed reward or trial and error searches are the key characteristics of reinforcement learning. The method allows machines to automatically determine the best behavior within a specific context to maximize their performance and get the best reward. They require to learn which actions work best – the so-called reinforcement signal. -->
+
+---
+layout: default
+---
+# Last but not least.. How can we use them in our life?
+### Supervised learning: use labeled data to recognize/predict
+- Classification problem: image recognition, face recognition
+- Regression problem: House price prediction, lifespan prediction
+### Unsupervised learning: use unlabeled data to recognize/predict
+- Clustering problem: identify fake news, Spam filter
+### Reinforcement learning: use data to make best decisions 
+- self-driving cars, Hey Siri, Alpha Go, etc
+<!--
+Supervised machine learning algorithms are able to apply what they have learned in the past to new data with the help of labeled examples. They do that to predict future events. Such algorithms begin with the analysis of the known training data set and then produce insights to make predictions about the output values. The system can provide targets for any new input after being exposed to sufficient training. The algorithm can also compare its results with the correct and intended output to find errors and modify the model accordingly.
+
+
+Unsupervised machine learning algorithms are used when data fed to the algorithm is not labeled or classified in any way. Unsupervised learning is based on systems that analyze patterns in unlabeled data. The system doesn’t arrive at the output that can be just right or wrong, but rather it explores the data and draws inferences from data sets.
+
+Reinforcement machine learning algorithms represent another type of learning method. This type of algorithm interacts with the environment by producing actions and then discovering errors or rewards. Delayed reward or trial and error searches are the key characteristics of reinforcement learning. The method allows machines to automatically determine the best behavior within a specific context to maximize their performance and get the best reward. They require to learn which actions work best – the so-called reinforcement signal. -->
+
+---
+layout: end
 class: text-center
 ---
 
-# Learn More
-
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+# thanks! Any questions?
